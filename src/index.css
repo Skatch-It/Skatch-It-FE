@@ -15,6 +15,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "NeoDunggeunmo";
+  font-weight: normal;
+  src: url("./assets/neodgm.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CarterOne";
+  font-weight: normal;
+  src: url("./assets/CarterOne-Regular.ttf") format("truetype");
+}
+
 .stroke{
   -webkit-text-stroke: 1px white;
 }
