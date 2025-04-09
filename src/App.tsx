@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import LoginUI from './login/Login.container'
+import LobbyUI from './lobby/Lobby.container'
 import './App.css'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
   // }, []);
   return (
     <div>
-      <LoginUI/>
+      {/* <LoginUI/> */}
+      <LobbyUI/>
     </div>
   )
 }
