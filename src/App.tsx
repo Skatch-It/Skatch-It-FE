@@ -1,22 +1,25 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Home from './home/Home.container'
+
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
-  const [message, setMessage] = useState("")
+  /* const [message, setMessage] = useState("")
 
   useEffect(()=>{
-    fetch('http://localhost:3002/api')
+    fetch('http://localhost:3002/get')
       .then(res => res.json())
       .then(data => setMessage(data.message))
       .catch(err => console.error("Error fetching data:", err));
-  }, []);
+  }, []); */
   return (
-    <div>
-      <h1>React + Vite + Express 연동</h1>
-      <p>{message}</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>}></Route>
+      {/* <Route path="/lobby" element={<LobbyUI/>}></Route>
+      <Route path="/{roomID}" element={<LoginUI/>}></Route>
+      <Route path="/game/{roomID}" element={<LoginUI/>}></Route> */}
+    </Routes>
   )
 }
 
