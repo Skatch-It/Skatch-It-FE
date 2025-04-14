@@ -3,7 +3,6 @@ import React from "react";
 const lobbyUI=()=>{
     return(
         <div className="bg-[#5868E0] w-screen h-screen flex flex-col justify-center items-center">
-            <p className="stroke text-3xl font-bold m-10 text-[#7458E0] text-7xl">Skatch-It</p>
             <div className="bg-[#35419F] w-6xl h-full mb-20 mt-10 space-x-20 px-40 py-20 flex" >
                 <div className="bg-[#7458E0] w-full h-full flex items-center justify-center">
                     <div className="flex flex-col items-center space-y-15">
